@@ -1,0 +1,19 @@
+
+index.hbs
+
+
+
+<h2>welcome {{username}}</h2>
+
+<a href="/logout">logout</a>
+
+<script type="text/javascript">
+  var socket = io.connect('http://localhost:3000');
+
+  socket.on('getUrls', (data) => {
+
+
+    $('.top-title-container').html(data);
+  })
+
+</script>

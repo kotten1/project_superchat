@@ -1,0 +1,13 @@
+<form class="" action="/login" method="post">
+  <input type="text" name="username" value="">
+  <input type="submit" name="" value="Log In">
+</form>
+
+<h2>Active Users!</h2>
+<ol>
+  {{#each activeUsers as |user|}}
+<li>
+  <p>{{user}}</p>
+</li>
+{{/each}}
+</ol>
